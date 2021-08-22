@@ -1,0 +1,91 @@
+/* Tablet mobile */
+@media (max-width: 1023px) {
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .btn {
+        min-width: unset;
+       
+    }
+    .btn.btn-tablet {
+        padding: 14px 20px;
+    }
+    .about-contact span {
+        text-align: center;
+        line-height: 2.4rem;
+    }
+    .about-pay {
+        font-size: 1.5rem;
+        margin: 20px 0;
+    }
+    .about-section {
+        padding-bottom: 10px;
+    }
+    
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .btn.btn-mobile {
+        padding: 16px 0;
+    }
+
+    .nav__item-link {
+        width: 100%;
+        text-align: center;
+        padding: 3px 16px;
+    }
+    .navigation {
+        height: unset;
+        display: block;
+        position: unset;
+    }
+    .nav__list {
+        display: block;
+    }
+    .nav__link-text {
+        width: 100%;
+        text-align: center;
+    }
+    .slider {
+        margin-top: unset;
+    }
+    .slider__img {
+        min-height: 534px;
+    }
+    .slider__form {
+        
+    }
+    .room-desc {
+        line-height: 2.4rem;
+    }
+    .slider__form-input {
+        padding: 14px 8px;
+    }
+    .slider__form-btn {
+        padding: 15px 24px;
+    }
+    .book-rooms {
+        margin-bottom: 16px;
+    }
+    .room-item {
+        margin-bottom: 16px;
+    }
+    .about-section {
+        padding: 14px 16px 0px;
+    }
+    .about-contact-item {
+        margin: 6px 0;
+    }
+    .about-contact i {
+        margin-right: 12px;
+    }
+    .contact__section-info {
+        margin: 12px 0;
+    }
+    .footer__link i {
+        margin: 0 4px;
+    }
+}

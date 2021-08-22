@@ -1,0 +1,58 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+
+    --navigation-height: 44px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.mt-8 {
+    margin: 8px 0;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mt-button {
+    margin-bottom: 16px;
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+.btn {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-size: 1.5rem;
+    padding: 12px 0;
+    text-align: center;
+    border: none;
+    display: block;
+    text-decoration: none;
+    min-width: 162px;
+    cursor: pointer;
+}
+
+.btn.btn-primary {
+    background-color: #f44336;
+    min-width: 102px;
+}
+
+.btn:hover {
+    background-color: #ccc;
+    color: var(--black-color);
+}

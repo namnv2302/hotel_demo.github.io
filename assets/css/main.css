@@ -1,0 +1,403 @@
+.navigation {
+    height: var(--navigation-height);
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.nav__list {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav__item:first-child > a {
+    background-color: #f44336;
+    color:var(--white-color);
+}
+
+.slider__form-btn:hover,
+.nav__link:hover > a,
+.nav__item:hover > a {
+    background-color: rgb(204, 204, 204);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.nav__item-link {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: var(--black-color);
+    padding: 0 16px;
+    display: inline-block;
+    line-height: var(--navigation-height);
+}
+
+.nav__item-icon {
+    font-size: 1.6rem;
+    padding-right: 10px;
+}
+
+.nav__link-text {
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 1.8rem;
+    line-height: var(--navigation-height);
+    display: inline-block;
+    padding: 0 16px;
+    background-color: #f1f1f1;
+}
+
+.slider {
+    margin-top: var(--navigation-height);
+    position: relative;
+}
+
+.slider__img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.slider__form {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+}
+
+.slider__form-header {
+    background-color: #f44336;
+    padding: 20px 16px;
+    
+}
+
+.slider__form-header h2 {
+    margin: 0;
+    color: var(--white-color);
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.slider__form-header h2 i {
+    font-size: 2.6rem;
+    margin-right: 8px;
+}
+
+.slider__form-container {
+    padding: 16px;
+    background-color: var(--white-color);
+}
+
+.slider__form-label {
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+}
+
+.slider__form-input {
+    display: block;
+    width: 100%;
+    padding: 11px 8px;
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+}
+
+.slider__form-btn {
+    font-size: 1.5rem;
+    background-color: #616161;
+    border: none;
+    color: var(--white-color);
+    padding: 11px 24px;
+}
+
+.slider__form-btn i {
+    font-weight: 600;
+    margin-right: 16px;
+}
+
+/* Rooms section */
+.container {
+    background-color: #f1f1f1;
+}
+
+.rooms-section {
+    padding: 16px 16px 0;
+}
+
+.room-heading {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+.room-desc {
+    font-size: 1.5rem;
+}
+
+.room-item {
+    transition: transform linear 0.1s;
+}
+
+.room-item:hover {
+    transform: translateY(-1px);
+}
+
+.room-img {
+    width: 100%;
+    display: block;
+}
+
+.room-img:hover {
+    opacity: 0.6;
+}
+
+.room__body {
+    background-color: var(--white-color);
+    padding: 16px;
+}
+
+.room__body-heading {
+    margin: 0;
+    padding: 2px 0;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+}
+
+.room__body-price {
+    font-size: 1.6rem;
+    padding: 2px 0;
+    opacity: 0.6;
+}
+
+.room__body-bed {
+    font-size: 1.5rem;
+    padding: 2px 0;
+}
+
+.room__body-wide {
+    font-size: 1.5rem;
+    padding: 2px 0;
+}
+
+.room__body-icon {
+    font-size: 1.8rem;
+    padding: 6px 0;
+}
+
+/* About */
+.about-section {
+    padding: 30px 16px;
+}
+
+.about-heading {
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+.about-text {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: justify;
+}
+
+.about-pay {
+    font-size: 1.5rem;
+}
+
+.about-pay i {
+    font-size: 1.8rem;
+}
+
+.about-img {
+    width: 100%;
+}
+
+.about-contact {
+    font-size: 1.8rem;
+    margin: 30px 0;
+}
+
+.about-contact-item {
+    display: flex;
+    justify-content: center;
+}
+
+.about-contact i {
+    color: #f44336;
+    margin-right: 6px;
+}
+
+.about-contact span {
+}
+
+/* Bonus */
+.about-section-bonus {
+    background-color: #f44336;
+    color: var(--white-color);
+    font-size: 1.6rem;
+    padding: 42px 16px;
+    border-left: 6px solid #ccc;
+}
+
+.about-section-bonus i {
+    padding: 8px 16px;
+    background-color: #ff5722;
+    margin-right: 16px;
+}
+
+/* Our hotels */
+.our-hotels {
+    padding: 16px;
+}
+
+.our-hotels-item {
+    position: relative;
+}
+
+.our-hotels-heading {
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+.our-hotels-subheading {
+    font-size: 1.6rem;
+}
+
+.our-hotels-img {
+    width: 100%;
+    display: block;
+    margin-top: 16px;
+}
+
+.our-hotels-img:hover {
+    opacity: 0.8;
+}
+
+.our-hotels-text {
+    position: absolute; 
+    font-size: 1.8rem;
+    color: var(--white-color);
+    bottom: 14px;
+    left: 20px;
+}
+
+/* subscribe-section */
+.subscribe-section {
+    background-color: var(--black-color);
+    padding: 32px 16px;
+    opacity: 0.6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 48px 0;
+}
+
+.subscribe-section:hover {
+    opacity: 1;
+}
+
+.subscribe-section__heading {
+    font-size: 3rem;
+    color: var(--white-color);
+    font-weight: 400;
+    margin: 10px 0;
+    line-height: 3.8rem;
+}
+
+.subscribe-section__sub-heading {
+    font-size: 1.5rem;
+    color: var(--white-color);
+    margin: 22px 0 22px;
+}
+
+.subscribe-section__label {
+    color: var(--white-color);
+    font-size: 1.5rem;
+    display: block;
+    line-height: 2.2rem;
+}
+
+.subscribe-section__input {
+    width: 100%;
+    border: none;
+    font-size: 1.6rem;
+    padding: 11px 16px;
+}
+
+/* Contact */
+.contact__section {
+    padding: 0 16px 32px;
+}
+
+.contact__section-heading {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.contact__section-desc {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.contact__section-info {
+    font-size: 1.5rem;
+    margin: 6px 0;
+}
+
+.contact__section-info i {
+    color: #f44336;
+    width: 30px;
+}
+
+.contact__form {
+
+}
+
+.contact__form-input {
+    width: 100%;
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+    padding: 17px 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 32px 0;
+}
+
+.footer__text {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.footer__link {
+    font-size: 2.4rem;
+    margin: 38px 0;
+}
+
+.footer__link i:hover {
+    opacity: 0.6;
+}
+
+.footer__copyright {
+    font-size: 1.5rem;
+}
+
+.footer__copyright a {
+    color: var(--white-color);
+}
+
+.footer__copyright a:hover {
+    color: #4CAF50;
+}

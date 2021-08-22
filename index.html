@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <div class="main">
+        <nav class="navigation">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#" class="nav__item-link">
+                        <i class="nav__item-icon fas fa-bed"></i>
+                        Logo
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#room" class="nav__item-link">Rooms</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__item-link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__item-link">Contact</a>
+                </li>
+            </ul>
+
+            <div class="nav__link">
+                <a href="#" class="nav__link-text">Book Now</a>
+            </div>
+        </nav>
+
+        <!-- Begin Slider -->
+        <div class="slider">
+            <img src="https://www.w3schools.com/w3images/hotel.jpg" alt="" class="slider__img">                         
+            
+            <div class="slider__form col l-6 m-8 c-12">
+                <div class="slider__form-header">
+                    <h2>
+                        <i class="fas fa-bed"></i>
+                        Hotel Name
+                    </h2>
+                </div>
+
+                <div class="slider__form-container">
+                    <form action="">
+                        <div class="row medium-gutter">
+                            <div class="col l-6 m-6 c-12">
+                                <label for="Check in" class="slider__form-label">
+                                    <i class="far fa-calendar"></i>
+                                    Check In
+                                </label>
+                                <input type="text" required class="slider__form-input mt-button" placeholder="DD MM YYYY" name="" id="Check in">
+                            </div>
+                            <div class="col l-6 m-6 c-12">
+                                <label for="Check out" class="slider__form-label">
+                                    <i class="far fa-calendar"></i>
+                                    Check Out
+                                </label>
+                                <input type="text" required class="slider__form-input mt-button" placeholder="DD MM YYYY" name="" id="Check out">
+                            </div>
+                        </div>
+                        <div class="row medium-gutter mt-8">
+                            <div class="col l-6 m-6 c-12">
+                                <label for="Adults" class="slider__form-label">
+                                    <i class="fas fa-male"></i>
+                                    Adults
+                                </label>
+                                <input type="number" required class="slider__form-input mt-button" value="1" min="1" max="6" name="Adults" id="Adults">
+                            </div>
+                            <div class="col l-6 m-6 c-12">
+                                <label for="Kids" class="slider__form-label">
+                                    <i class="fas fa-child"></i>
+                                    Kids
+                                </label>
+                                <input type="number" required class="slider__form-input mt-button" value="1" min="0" max="6" name="Kids" id="Kids">
+                            </div>
+                        </div>
+
+                        <button type="submit"class="slider__form-btn">
+                            <i class="fas fa-search"></i>
+                            Search availability
+                        </button>
+                    </form>
+                </div>
+            </div> 
+                               
+        </div>
+
+        <!-- End Slider -->
+        <div class="container">
+            <!-- Begin Rooms section -->
+            <div id="room" class="rooms-section">
+                <div class="book-rooms">
+                    <h3 class="room-heading">Rooms</h3>
+                    <p class="room-desc">Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.</p>
+                    <div class="row medium-gutter">
+                        <div class="col l-3 m-3 c-12">
+                            <label for="Check in 2" class="slider__form-label">
+                                <i class="far fa-calendar"></i>
+                                Check In
+                            </label>
+                            <input type="text" class="slider__form-input mt-button" placeholder="DD MM YYYY" name="" id="Check in 2">
+                        </div>
+                        <div class="col l-3 m-3 c-12">
+                            <label for="Check out 2" class="slider__form-label">
+                                <i class="far fa-calendar"></i>
+                                Check Out
+                            </label>
+                            <input type="text" class="slider__form-input mt-button" placeholder="DD MM YYYY" name="" id="Check out 2">
+                        </div>
+                        <div class="col l-2 m-2 c-12">
+                            <label for="Adults 2" class="slider__form-label">
+                                <i class="fas fa-male"></i>
+                                Adults
+                            </label>
+                            <input type="number" class="slider__form-input mt-button" value="1" min="1" max="6" name="Adults" id="Adults 2">
+                        </div>
+                        <div class="col l-2 m-2 c-12">
+                            <label for="Kids 2" class="slider__form-label">
+                                <i class="fas fa-child"></i>
+                                Kids
+                            </label>
+                            <input type="number" class="slider__form-input mt-button" value="1" min="0" max="6" name="Kids" id="Kids 2">
+                        </div>
+                        <div class="col l-2 m-2 c-12">
+                            <label for="Kids" class="slider__form-label">
+                                <i class="fas fa-search"></i>
+                                Search
+                            </label>
+                            <button class="btn btn-mobile full-width">Search</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rooms-list row medium-gutter">
+                    <div class="room-item col l-4 m-4 c-12">
+                        <img src="https://www.w3schools.com/w3images/room_single.jpg" alt="" class="room-img">
+                        <div class="room__body">
+                            <h3 class="room__body-heading">Single Room</h3>
+                            <p class="room__body-price">From $99</p>
+                            <p class="room__body-bed">Single bed</p>
+                            <p class="room__body-wide">15m2</p>
+                            <p class="room__body-icon">
+                                <i class="fas fa-bath"></i>
+                                <i class="fas fa-phone"></i>
+                                <i class="fas fa-wifi"></i>
+                            </p>
+                            <button class="btn btn-tablet btn-mobile full-width">Choose Room</button>
+                        </div>
+                    </div>
+                    <div class="room-item col l-4 m-4 c-12">
+                        <img src="https://www.w3schools.com/w3images/room_double.jpg" alt="" class="room-img">
+                        <div class="room__body">
+                            <h3 class="room__body-heading">Double Room</h3>
+                            <p class="room__body-price">From $149</p>
+                            <p class="room__body-bed">Queen-size bed</p>
+                            <p class="room__body-wide">25m2</p>
+                            <p class="room__body-icon">
+                                <i class="fas fa-bath"></i>
+                                <i class="fas fa-phone"></i>
+                                <i class="fas fa-wifi"></i>
+                                <i class="fas fa-tv"></i>
+                            </p>
+                            <button class="btn btn-tablet btn-mobile full-width">Choose Room</button>
+                        </div>
+                    </div>
+                    <div class="room-item col l-4 m-4 c-12">
+                        <img src="https://www.w3schools.com/w3images/room_deluxe.jpg" alt="" class="room-img">
+                        <div class="room__body">
+                            <h3 class="room__body-heading">Deluxe Room</h3>
+                            <p class="room__body-price">From $199</p>
+                            <p class="room__body-bed">King-size bed</p>
+                            <p class="room__body-wide">40m2</p>
+                            <p class="room__body-icon">
+                                <i class="fas fa-bath"></i>
+                                <i class="fas fa-phone"></i>
+                                <i class="fas fa-wifi"></i>
+                                <i class="fas fa-tv"></i>
+                                <i class="fas fa-glass-martini-alt"></i>
+                                <i class="fas fa-utensils"></i>
+                            </p>
+                            <button class="btn btn-tablet btn-mobile full-width">Choose Room</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Rooms section -->
+
+            <!-- Begin About section -->
+            <div id="about" class="about-section">
+                <div class="row medium-gutter">
+                    <div class="col l-4 m-12 c-12">
+                        <h3 class="about-heading">About</h3>
+                        <p class="about-text">
+                            Our hotel is one of a kind. It is truely amazing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                        </p>
+                        <p class="about-pay">
+                            We accept:
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fas fa-credit-card-front"></i>
+                            <i class="fab fa-paypal"></i>
+                        </p>
+                    </div>
+                    <div class="col l-8 m-12 c-12">
+                        <img src="./assets/img/map.jpg" alt="" class="about-img">
+                    </div>
+                </div>
+
+                <div class="about-contact row">
+                    <div class="col l-4 m-4 about-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>423 Some adr, Chicago, US</span>
+                    </div>
+                    <div class="col l-4 m-4 about-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>Phone: +00 151515</span>
+                    </div>
+                    <div class="col l-4 m-4 about-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email: mail@mail.com</span>
+                    </div>
+                </div>              
+            </div>
+            <!-- End About section -->
+
+            <div class="about-section-bonus">
+                <i class="fas fa-info"></i>
+                <span>On demand, we can offer playstation, babycall, children care, dog equipment, etc.</span>
+            </div>
+
+            <!-- Our hotel -->
+            <div class="our-hotels">
+                <h3 class="our-hotels-heading">Our Hotels</h3>
+                <p class="our-hotels-subheading">You can find our hotels anywhere in the world:</p>
+                <div class="row medium-gutter">
+                    <div class="our-hotels-item col l-6 m-6 c-12">
+                        <img src="https://www.w3schools.com/w3images/cinqueterre.jpg" alt="" class="our-hotels-img">
+                        <span class="our-hotels-text">Cinque Terre</span>
+                    </div>
+                    <div class="our-hotels-item col l-6 m-6 c-12">
+                        <div class="row medium-gutter">
+                            <div class="our-hotels-item col l-6 m-6 c-12">
+                                <img src="https://www.w3schools.com/w3images/newyork2.jpg" alt="" class="our-hotels-img">
+                                <span class="our-hotels-text">New York</span>                              
+                            </div>
+                            <div class="our-hotels-item col l-6 m-6 c-12">
+                                <img src="https://www.w3schools.com/w3images/sanfran.jpg" alt="" class="our-hotels-img">
+                                <span class="our-hotels-text">San Francisco</span>
+                            </div>
+                        </div>
+                        <div class="row medium-gutter">
+                            <div class="our-hotels-item col l-6 m-6 c-12">
+                                <img src="https://www.w3schools.com/w3images/pisa.jpg" alt="" class="our-hotels-img">
+                                <span class="our-hotels-text">Pisa</span>
+                            </div>
+                            <div class="our-hotels-item col l-6 m-6 c-12">
+                                <img src="https://www.w3schools.com/w3images/paris.jpg" alt="" class="our-hotels-img">
+                                <span class="our-hotels-text">Paris</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subscribe-section">
+                <h2 class="subscribe-section__heading">Get the best offers first!</h2>
+                <p class="subscribe-section__sub-heading">Join our newsletter.</p>
+                <label for="" class="subscribe-section__label"> E-mail</label>
+               <input type="email" class="subscribe-section__input" placeholder="Your Email address" name="" id="">
+               <button class="btn btn-primary mt-16">Subscribe</button>
+            </div>
+
+            <!-- Contact -->
+            <div id="contact" class="contact__section">
+                <h3 class="contact__section-heading">Contact</h3>
+                <p class="contact__section-desc">If you have any questions, do not hesitate to ask them.</p>
+                <p class="contact__section-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Chicago, US
+                </p>
+                <p class="contact__section-info">
+                    <i class="fas fa-phone"></i>
+                    Phone: +00 151515
+                </p>
+                <p class="contact__section-info">
+                    <i class="fas fa-envelope"></i>
+                    Email: mail@mail.com
+                </p>
+
+                <form action="" class="contact__form">
+                    <div class="row">
+                        <div class="mt-16 col l-12 m-12 c-12">
+                            <input type="text" name="" id="" required placeholder="Name" class="contact__form-input">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mt-16 col l-12 m-12 c-12">
+                            <input type="email" name="" id="" required placeholder="Email" class="contact__form-input">                           
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mt-16 col l-12 m-12 c-12">
+                            <input type="text" name="" id="" required placeholder="Message" class="contact__form-input">                         
+                        </div>
+                    </div>
+                    <button class="btn btn-tablet btn-mobile mt-16">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p class="footer__text">Find Us On</p>
+            <div class="footer__link">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-snapchat"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            <p class="footer__copyright">Powered by <a href="">w3.css</a></p>
+        </div>
+    </div>
+</body>
+</html>
